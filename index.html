@@ -1,50 +1,106 @@
 <!DOCTYPE html>
-<!-- 1.2.0 -->
+<!-- 1.3.0 -->
 <html lang="en">
     <head>
         <title>Jo Satoshi's blog</title>
 
         <meta charset="utf-8" />
-        <meta name="description" content="exglos jo satoshi blog" />
+        <meta name="description" content="exglos Jo Satoshi blog" />
         <meta name="keywords" content="exglos jo satoshi exg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#EE0055" />
 
-        <link rel="icon" href="logo.png" />
+        <link rel="icon" href="https:/exglos.com/logo.png" />
         <style>
+            @font-face {
+                font-family: main;
+                src: url(https://exglos.com/font.ttf);
+            }
+            html, body {
+                margin: 0px;
+                padding: 0px;
+            }
             div {
-                font-family: monospace, sans-serif;
+                font-family: main, monospace;
                 overflow: hidden;
+                word-wrap: break-word;
+            }
+            a {
+                color: black;
+                outline: 0;
+            }
+
+            #top {
+                background: #EE0055;
+            }
+            #topLogo {
+                margin: 10px;
+                width: 120px;
+                height: 120px;
+                background: url(https://exglos.com/logo.svg);
+            }
+            #top h1 {
+                position: absolute;
+                margin: 0px;
+                top: 0px;
+                right: 10px;
+                font-size: 48px;
+                font-weight: 100;
+            }
+            #top h2 {
+                position: absolute;
+                margin: 0px;
+                top: 80px;
+                right: 10px;
+                font-size: 32px;
+                font-weight: 100;
+            }
+            #top a {
+                text-decoration: none;
+            }
+            #top a:focus {
+                text-decoration: underline;
             }
             #main {
                 margin: 32px auto;
                 width: 90%;
                 max-width: 800px;
             }
-            h2 {
+            #main h2 {
                 margin-top: 64px;
                 text-align: right;
-                font-weight: normal;
                 font-size: 14px;
                 color: #EE0055;
             }
-            a {
-                color: black;
-                outline: 0;
-            }
-            a:focus {
+            #main a:focus {
                 color: #EE0055;
             }
 
             @media (hover: hover) {
-                a:hover {
+                #top a:hover {
+                    text-decoration: underline;
+                }
+                #main a:hover {
                     color: #EE0055;
                 }
             }
         </style>
     </head>
     <body>
+        <div id="top">
+            <div id="topLogo"></div>
+            <h1><a href="https://exglos.com" target="_blank">exglos</a></h1>
+            <h2>blog</h2>
+        </div>
         <div id="main">
+            <h2 id="a2023-05-23">2023-05-23</h2>
+            <p>Exg buyback.</p>
+            <p>Anyone who wants to sell exg for 0.004 eth/exg can send tokens to exglos.eth
+                (<a href="https://etherscan.io/address/0x5B764b71D601bbD97434696C9F53EE2133F7E1cf"
+                   target="_blank">0x5B764b71D601bbD97434696C9F53EE2133F7E1cf</a>).
+                The corresponding amount of ether will be sent back manually.
+                This offer is valid from block 17320000 to block 17536000 (estimate 2023-06-22)
+                only for purchases before block 17320000.</p>
             <h2 id="a2023-05-16">2023-05-16</h2>
             <p>Big dividends.</p>
             <p>0.000936 eth/exg (46.8% roi),
