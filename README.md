@@ -1,2 +1,2 @@
 # jo
-personal blog
+founder's blog
