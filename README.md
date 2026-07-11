@@ -1,2 +1,1 @@
-# jo
-founder's blog
+# jo.exglos.eth blog

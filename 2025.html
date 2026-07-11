@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- 3.0.0 -->
+<!-- v3: year index (0=2022 creation)-->
+<html lang="en">
+    <head>
+        <title>jo.exglos.eth blog</title>
+
+        <meta charset="UTF-8" />
+        <meta name="description" content="J0 Satoshi blog" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#EE0055" />
+
+        <link rel="icon" href="https://exglos.com/logo.png" />
+        <style>
+            @font-face {
+                font-family: main;
+                src: url(https://exglos.com/font.ttf);
+            }
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            div {
+                font-family: main, monospace;
+                overflow: hidden;
+                word-wrap: break-word;
+            }
+            a {
+                color: black;
+                outline: 0;
+            }
+
+            #top {
+                background: #ee0055;
+            }
+            #topLogo {
+                margin: 10px;
+                width: 120px;
+                height: 120px;
+                background: url(https://exglos.com/logo.svg);
+            }
+            #top h1 {
+                position: absolute;
+                margin: 0px;
+                top: 0px;
+                right: 10px;
+                font-size: 48px;
+                font-weight: 100;
+            }
+            #top h2 {
+                position: absolute;
+                margin: 0px;
+                top: 80px;
+                right: 10px;
+                font-size: 32px;
+                font-weight: 100;
+            }
+            #top a {
+                text-decoration: none;
+            }
+            #top a:focus {
+                text-decoration: underline;
+            }
+            #main {
+                margin: 32px auto;
+                width: 90%;
+                max-width: 800px;
+            }
+            #main h3 {
+                margin-top: 64px;
+                text-align: right;
+                font-size: 14px;
+                color: #ee0055;
+            }
+            #main a:focus {
+                color: #ee0055;
+            }
+
+            @media (hover: hover) {
+                #top a:hover {
+                    text-decoration: underline;
+                }
+                #main a:hover {
+                    color: #ee0055;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            <div id="topLogo"></div>
+            <h1><a href="https://exglos.com" target="_blank">exglos</a></h1>
+            <h2>2025 (y = 3)</h2>
+        </div>
+        <div id="main">
+            <h3 id="a2024-12-23">2024-12-23</h3>
+            <p><a href="index.html" target="_blank">2022-2024 (y = [0, 1, 2])</a></p>
+        </div>
+    </body>
+</html>
