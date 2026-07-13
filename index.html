@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- 4.0.0 -->
+<!-- 4.1.0 -->
 <!-- v4: 2026 year index (0=2022 creation)-->
 <html lang="en">
     <head>
@@ -32,27 +32,30 @@
             }
 
             #top {
+                position: relative;
                 background: #ee0055;
             }
+            #topCanvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
             #topLogo {
-                margin: 10px;
-                width: 120px;
-                height: 120px;
+                position: relative;
+                margin: 20px;
+                width: 280px;
+                height: 280px;
                 background: url(https://exglos.com/logo.svg);
             }
             #top h1 {
-                position: absolute;
-                margin: 0px;
-                top: 0px;
-                right: 10px;
-                font-size: 48px;
+                margin: 0 2px 0px 32px;
+                font-size: 40px;
                 font-weight: 100;
             }
             #top h2 {
-                position: absolute;
-                margin: 0px;
-                top: 80px;
-                right: 10px;
+                margin: 12px 2px 32px 32px;
                 font-size: 32px;
                 font-weight: 100;
             }
@@ -61,6 +64,19 @@
             }
             #top a:focus {
                 text-decoration: underline;
+            }
+            @media (min-width: 680px) {
+                #top h1 {
+                    position: absolute;
+                    top: 40px;
+                    left: 280px;
+                    font-size: 64px;
+                }
+                #top h2 {
+                    position: absolute;
+                    top: 220px;
+                    left: 280px;
+                }
             }
             #main {
                 margin: 32px auto;
@@ -89,13 +105,77 @@
     </head>
     <body>
         <div id="top">
+            <canvas id="topCanvas"></canvas>
             <div id="topLogo"></div>
-            <h1><a href="https://exglos.com" target="_blank">exglos</a></h1>
+            <h1>jo.<a href="https://exglos.com" target="_blank">exglos</a></h1>
             <h2>2026 (y = 4)</h2>
         </div>
         <div id="main">
+            <h3 id="a2026-07-11">2026-07-11</h3>
+            <p>
+                Price set at 0.012 eth/exg following the soft dao poll: 4 participants voted for price 0.010 eth/exg, 2
+                for 0.032, 0 for 0.020.
+            </p>
+
+            <h3 id="a2026-06-25">2026-06-25</h3>
+            <p>
+                Ghosts are long-inactive accounts. We found 3 wallets with no activity for over 1000 days. Together,
+                they hold ~0.14 eth of unwithdrawn dividends that likely won't ever be claimed. If they stay inactive,
+                future dividends will keep piling up there and go unclaimed.
+            </p>
+
+            <h3 id="a2026-06-05">2026-06-05</h3>
+            <p>
+                Welcome, <a href="https://thekeyexchange.io" target="_blank">okt</a>:
+                <a href="https://github.com/exglos/okt" target="_blank">audit</a>.
+            </p>
+
+            <h3 id="a2026-05-22">2026-05-22</h3>
+            <p>
+                Since
+                <a href="https://t.me/exglos" target="_blank">t.me/exglos</a>
+                is ownerless, welcome to the new
+                <a href="https://t.me/exglos1" target="_blank">t.me/exglos1</a>
+            </p>
+
+            <h3 id="a2026-04-26">2026-04-26</h3>
+            <p>
+                We're <a href="https://github.com/exglos/exglos.github.io" target="_blank">updating</a>
+                <a href="https://exglos.com" target="_blank">exglos.com</a>. Drifting from soul toward community and
+                utility.
+            </p>
+
+            <h3 id="a2026-04-08">2026-04-08</h3>
+            <p>
+                Behold! <a href="https://wallet.exglos.com" target="_blank">wallet.exglos.com</a>
+                <a href="https://github.com/exglos/wallet" target="_blank">v2</a> is live. Fixed provider issues. Code
+                refactored to es11. New ens support, expanded gas control, low-level contract interaction, tx history.
+            </p>
+
+            <h3 id="a2026-03-27">2026-03-27</h3>
+            <p>
+                Welcome to <a href="https://swap.exglos.com" target="_blank">swap.exglos.com</a>
+                — a swap frontend
+                <a href="https://github.com/exglos/swap" target="_blank">built</a> around blockchain ethos:
+                permissionless, trustless, and censorship-resistant. As existing swaps have grown larger and drifted
+                from these principles, exglos swap offers a fresh way to expand the best of blockchain.
+            </p>
+
+            <h3 id="a2026-02-01">2026-02-01</h3>
+            <p>
+                Dear all, I've lost access to
+                <a href="https://t.me/josatoshi" target="_blank">t.me/josatoshi</a>
+                — pre-web3, it wasn't really under my keys. New:
+                <a href="https://t.me/J0satoshi" target="_blank">t.me/J0satoshi</a>
+                — J0 is first names J and O as zero.
+            </p>
+
+            <h3 id="a2026-01-20">2026-01-20</h3>
+            <p>Good news! Divs 0.001005 eth/exg</p>
+
             <h3 id="a2025-12-21">2025-12-21</h3>
             <p><a href="2025.html" target="_blank">2025</a> (y = 3)</p>
         </div>
+        <script src="./app-4.1.0.js"></script>
     </body>
 </html>
