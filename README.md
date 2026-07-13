@@ -1,1 +1,1 @@
-# jo.exglos.eth blog
+# jo.exglos.eth personal log
